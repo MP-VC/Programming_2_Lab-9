@@ -22,4 +22,9 @@ public class Dog extends Mammal {
     public void greets(Dog dog) {
         System.out.println("Woooof");
     }
+
+    @Override
+    public String toString() {
+        return "Dog:[" + super.toString() + "]";
+    }
 }
