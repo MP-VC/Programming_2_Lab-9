@@ -3,15 +3,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Customer {
-    String name;
-    boolean member = false;
-    String memberType = "none";
-    ArrayList<String> validType = new ArrayList<>(Arrays.asList("premium","gold","silver"));
+    private String name;
+    private boolean member = false;
+    private String memberType = "none";
+    private ArrayList<String> validType = new ArrayList<>(Arrays.asList("premium","gold","silver"));
 
     public Customer(String name) {
         this.name = name;
     }
-
+    public String getName() {
+        return name;
+    }
     public void setMember() {
         member = true;
     }
